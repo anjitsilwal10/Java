@@ -6,6 +6,14 @@ public class A05_MethodOverloading {
     static double methodDouble(double x, double y){
         return x + y ;
     }
+
+    static int methodInt01(int x, int y){
+        return x + y;
+    };
+
+    static int methodInt01(int x, int y, int z){
+        return x + y + z;
+    }
     /* Instead of defining two methods that should do the same thing, it is better to overload one.
 
        In the example below, we overload the plusMethod method to work for both int and double:*/
@@ -33,6 +41,14 @@ public class A05_MethodOverloading {
         System.out.print(myString2);
 
         System.out.print("Int: " + myNum1);
-        System.out.print("\nDouble: " + myNum2);
+        System.out.print("Double: " + myNum2 + "\n");
+
+        System.out.print(methodInt01(6,5) );
+        System.out.print(methodInt01(6,7,4));
+
+
+
+        System.out.print("\nMethod with 2 parameter: " + methodInt01(6,5) );
+        System.out.print("\nMethod with 3 Parameters: "+ methodInt01(6,7,4));
     }
 }

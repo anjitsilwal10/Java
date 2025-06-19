@@ -14,14 +14,19 @@ public class Main {
         boolean isTall = false;
         boolean isOnline = true;
         //System.out.print((forSale));
+//        if(isTall){
+//            System.out.print("He is tall!.");
+//        }else {
+//            System.out.print("He is not tall.");
+//        };
         if(isTall){
-            System.out.print("He is tall!.");
-        }else {
-            System.out.print("He is not tall.");
-        };
+            System.out.print("He is tall");
+        }else{
+            System.out.print("He is short.");
+        }
 
         String name = "Anjit Silwal";
-        System.out.print("Hello " + name);
+        System.out.print("\nHello " + "\n"+ name);
     }
 }
 
